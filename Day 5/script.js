@@ -95,6 +95,3 @@ function composeFunction(fnc1, fnc2, value) {
 
 const result = composeFunction(add5, multiply, 10);
 console.log(result);
-
-
-// ! Add Collabrator to reimagine
