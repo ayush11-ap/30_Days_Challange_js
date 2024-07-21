@@ -5,7 +5,7 @@
 let name = "Ayush";
 let age = 19;
 
-// console.log(`My name is ${name}, & age is ${age}`);
+console.log(`My name is ${name}, & age is ${age}`);
 
 // multi-line string
 let multiStr = `Hellow myself Ayush Pawar and short term goal
