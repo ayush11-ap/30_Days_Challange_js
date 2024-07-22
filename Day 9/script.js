@@ -38,7 +38,7 @@ let p = document.querySelector('p');
 let button = document.querySelector('button')
 
 button.addEventListener("click", () => {
-    p.innerText = `Ayush u have to become a millionare till the age of 21`
+    p.innerText = `become a millionare till the age of 21`
 })
 
 button.addEventListener("mouseover", () => {
