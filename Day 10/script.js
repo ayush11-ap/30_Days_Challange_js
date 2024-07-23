@@ -61,3 +61,31 @@ dropDown.addEventListener('change', () => {
     let changedVal = dropDown.value;
     selectedText.textContent = changedVal;
 });
+
+// * Activity 5
+let parent = document.querySelector('.parent');
+let parChild = document.querySelectorAll('.child');
+let addItem = document.querySelector('#addItem');
+
+// parent.addEventListener('click', () => {
+//    console.log('clicked');
+// })
+
+parent.addEventListener("click", (e) => {
+  if(e.target && e.target.classList.contains('child')){
+    console.log(e.target.textContent)
+  }
+});
+
+let carsData = ['', 'Maclaren', 'Bugatti', 'TATA Harrier'];
+let itemCount = 0;
+
+addItem.addEventListener('click', () => {
+  itemCount++;
+  let newItem = document.createElement('li');
+  newItem.className = 'child';
+  newItem.textContent = carsData[itemCount];
+  parent.appendChild(newItem);
+});
+
+
