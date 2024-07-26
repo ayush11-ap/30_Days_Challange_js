@@ -37,13 +37,30 @@ module.exports = {About, Contact, add}
 // export default Services;
 
 // * Activity3: Importing Entire Modules.
-export const PI = 3.14;
-export const E = 2.17;
+// export const PI = 3.14;
+// export const E = 2.17;
 
-export function substract(a, b){
-    return a - b;
-}
+// export function substract(a, b){
+//     return a - b;
+// }
 
-export function multiply(a, b){
-    return a * b;
-}
+// export function multiply(a, b){
+//     return a * b;
+// }
+
+const _ = require('lodash');
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const chunkedArray = _.chunk(array, 2);
+
+console.log(chunkedArray);
+
+const axios = require('axios');
+
+axios.get('https://jsonplaceholder.typicode.com/posts/1')
+.then(res => {
+    console.log(`Data: ${res.data}`);
+})
+.catch(err => {
+    console.log(`Error fetching data :${err}`);
+})
