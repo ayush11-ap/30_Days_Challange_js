@@ -1,4 +1,4 @@
-// ! Activity 1: Variable Declaration
+//! Activity 1: Variable Declaration
 
 var num = 11;
 console.log(num);
